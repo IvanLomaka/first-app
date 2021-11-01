@@ -1,21 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import MainScreen from './components/Main';
+import SinglePlayerScreen from './components/main/SinglePlayer';
+import AIScreen from './components/main/AI';
+
+const Stack = createStackNavigator()
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Main'>
+        <Stack.Screen name='Main' component={MainScreen} options={{ headerShown:false }}/>
+        <Stack.Screen name='SinglePlayer' component={SinglePlayerScreen} options={{ headerShown:false }}/>
+        <Stack.Screen name='AI' component={AIScreen} options={{ headerShown:false }}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

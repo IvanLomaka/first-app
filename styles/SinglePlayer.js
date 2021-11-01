@@ -1,0 +1,148 @@
+import { StyleSheet } from 'react-native'
+
+const stylesSinglePlayer = StyleSheet.create({
+    header: {
+        flex: 0,
+        height: 320
+    },
+    headerText: {
+        textAlign: 'center',
+        fontSize: 70,
+        height: 270,
+        paddingTop: 170
+    },
+    container: {
+        flex: 0,
+        alignContent: 'center',
+        alignItems: 'center',
+    },
+    row: {
+        flex: 0,
+        flexDirection: 'row',
+    },
+    button: {
+        marginTop: 30,
+        marginLeft: 40,
+        marginRight: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 32,
+        borderRadius: 4,
+        elevation: 3,
+        backgroundColor: 'black',
+    },
+    text: {
+        fontSize: 16,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'white',
+    },
+    buttonWrapper: {
+        height: 200
+    },
+    winMessage: {
+        marginTop: 30,
+        textAlign: 'center',
+        fontSize: 30
+    },
+    zero: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderBottomWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    one: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderBottomWidth: 4,
+        borderLeftWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    two: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderLeftWidth: 4,
+        borderBottomWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    three: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderBottomWidth: 4,
+        borderTopWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    four: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderBottomWidth: 4,
+        borderTopWidth: 4,
+        borderLeftWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    five: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderBottomWidth: 4,
+        borderTopWidth: 4,
+        borderLeftWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    six: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderTopWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    seven: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderRightWidth: 4,
+        borderTopWidth: 4,
+        borderLeftWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    },
+    eight: {
+        width: 100,
+        height: 100,
+        borderColor:'#000000',
+        borderLeftWidth: 4,
+        borderTopWidth: 4,
+        textAlign: 'center',
+        textAlignVertical: 'center',
+        fontSize: 90,
+    }
+})
+
+export default stylesSinglePlayer
